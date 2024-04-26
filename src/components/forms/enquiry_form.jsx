@@ -43,7 +43,7 @@ export default function EnquiryForm() {
     </Field >
   );
   return (
-    <div className='bg-white rounded-[10px] w-[100%] max-w-[500px] mt-[40px] shadow-lg px-[15px] py-[30px] mx-auto'>
+    <div className='bg-white rounded-[10px] w-[100%] max-w-[500px] mt-[40px] shadow-lg px-[35px] py-[40px] mx-auto'>
       <Formik
         initialValues={{
           firstName: '',

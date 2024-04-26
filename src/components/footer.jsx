@@ -4,7 +4,7 @@ import React from 'react'
 export default function Footer() {
   return (
     <div style={{
-      background: "linear-gradient(135deg, rgb(149, 63, 16) 0%, rgb(84, 84, 84) 100%);"
+      background: "linear-gradient(135deg, rgb(149, 63, 16) 0%, rgb(84, 84, 84) 100%)"
     }}>
       <div className='min-h-[300px] w-full container xl:px-[5%] px-[5%] md:px-0 py-[80px] text-white mx-auto'>
         <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-center gap-10'>

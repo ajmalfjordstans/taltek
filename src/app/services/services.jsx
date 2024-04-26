@@ -1,3 +1,5 @@
+'use client'
+import Reveal from '@/components/animation/reveal';
 import React from 'react'
 
 const sapModules = [
@@ -104,8 +106,10 @@ export default function Services() {
             {sapModules.map((data, id) => {
               return (
                 <div key={id} className='flex flex-col text-center shadow-lg p-[20px] rounded-[10px] border-gray border-[1px] hover:shadow-2xl hover:scale-[1.1] transition-all duration-300 text-gray bg-white'>
-                  <p className='font-[700] '>{data.module}</p>
-                  <p className='mt-[15px]'>{data.description}</p>
+                  <Reveal>
+                    <p className='font-[700] '>{data.module}</p>
+                    <p className='mt-[15px]'>{data.description}</p>
+                  </Reveal>
                 </div>
               )
             })}
@@ -117,8 +121,10 @@ export default function Services() {
             {sapPrograms.map((data, id) => {
               return (
                 <div key={id} className='flex flex-col text-center shadow-lg p-[20px] rounded-[10px] border-gray border-[1px] hover:shadow-2xl hover:scale-[1.1] transition-all duration-300 text-gray bg-white'>
-                  <p className='font-[700] '>{data.program}</p>
-                  <p className='mt-[15px]'>{data.description}</p>
+                  <Reveal>
+                    <p className='font-[700] '>{data.program}</p>
+                    <p className='mt-[15px]'>{data.description}</p>
+                  </Reveal>
                 </div>
               )
             })}
